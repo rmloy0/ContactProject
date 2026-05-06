@@ -32,7 +32,7 @@ connectDB.initDB((err) => {
 
     } else {
       
-        app.use('/contact', contactRoutes);
+        app.use('/contacts', contactRoutes);
         app.listen(process.env.PORT || port);
         console.log(`App listening on port ${port}`);
     }
