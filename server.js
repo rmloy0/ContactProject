@@ -24,7 +24,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-
+ app.use('/contacts', contactRoutes);
 
 connectDB.initDB((err) => {
     if (err) {
@@ -32,7 +32,7 @@ connectDB.initDB((err) => {
 
     } else {
       
-        app.use('/contacts', contactRoutes);
+       
         app.listen(process.env.PORT || port);
         console.log(`App listening on port ${port}`);
     }
