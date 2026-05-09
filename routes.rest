@@ -1,0 +1,41 @@
+// Local host
+###get all contact
+Get http://localhost:8080/contacts
+
+
+####Create a contact
+
+POSt http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+
+{
+    "firstName": "Raquel13",
+    "lastName": "Saenz",
+    "email": "Raquel@hotmail.com",
+    "favoriteColor": "sky-blue",
+    "birthday": "2010-20-10"
+
+
+}
+
+
+####
+ 
+PUT  http://localhost:8080/contacts/69ff9c970805fd3012bfabf3 HTTP/1.1
+content-type: application/json
+
+
+{
+    "firstName": "Raquel",
+    "lastName": "Saenz",
+    "email": "Raquel@hotmail.com",
+    "favoriteColor": "sky-blue",
+    "birthday": "2010-10-20"
+
+
+}
+
+
+#####Delete 
+DELETE http://localhost:8080/contacts/69ff9e1b6e7f58dfcf6c5244  HTTP/1.1
