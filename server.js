@@ -28,7 +28,7 @@ app.use(
 app.use(express.json());
 
 app.use('/', require('./routes/index'));
-app.use('/contacts', require('./routes/ContactRoute'));
+app.use('/contacts', require('./routes/contactRoute'));
 
 connectDB.initDB((err) => {
   if (err) {

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = new express.Router();
-contactsRoute = require('./ContactRoute');
+contactsRoute = require('./contactRoute');
 
 router.use('/', require('./swagger'));
 
