@@ -5,7 +5,7 @@
     "description": "User API",
     "version": "1.0.0"
   },
-  "host": "contactproject-0hmu.onrender.com/",
+  "host": "contactproject-0hmu.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
