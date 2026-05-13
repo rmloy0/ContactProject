@@ -31,7 +31,7 @@ const createContact = async (req, res) => {
       birthday: new Date(req.body.birthday),
     };
     const data = await contactModel.createContact(contact);
-    res.status(204).json(data);
+    res.status(201).json(data);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -51,7 +51,7 @@ const updateContact = async (req, res) => {
     };
 
     const data = await contactModel.updateContact(object_id, contact);
-    res.status(201).json(data);
+    res.status(200).json(data);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
